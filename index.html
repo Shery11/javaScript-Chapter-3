@@ -1,0 +1,99 @@
+
+<!doctype html>
+<html>
+<head>
+    <title>Learning java Script</title>
+
+    <meta charset="utf-8" />
+    <meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <style type="text/css">
+        #myCircle{width:200px; 
+                height: 200px; 
+                border-radius: 200px; background-color: red;}
+    </style>
+
+   
+    
+</head>
+
+<body>
+
+<p id="name">thi sis paragraph</p>
+
+<button id="myButton">Click me</button>
+
+
+ <button id="textChanger">Click to change text</button>
+<div id="myDiv">This is some text</div>
+
+<button id="textAppender">Appender</button>
+<div id="second">second paragraph</div>
+
+<button id="textCreator">creator</button>
+<div id="third"></div>
+
+
+<div id="myCircle"></div>
+
+
+<input id="myInput" value="test"> <button id="mybutton" type="button" class="btn btn-primary">submit</button>
+<div id="fourth">this is my div</div>
+
+
+<script type="text/javascript">
+    // alert(document.getElementById("name").innerHTML= "This is changed text");  
+
+    document.getElementById("myButton").onclick=function(){
+         // alert("m clciked");
+    };
+
+    document.getElementById("textChanger").onclick = function(){
+          document.getElementById("myDiv").innerHTML = "This is cool";
+    }
+
+
+   document.getElementById("textAppender").onclick = function(){
+          document.getElementById("second").innerHTML = document.getElementById("second").innerHTML+"great!";
+    }
+
+     document.getElementById("textCreator").onclick = function(){
+          document.getElementById("third").innerHTML ="<ul><li>Dog</li><li>Cat</li>";
+    }
+   document.getElementById("myCircle").onclick = function(){
+      document.getElementById("myCircle").style.display ="none";
+  }
+
+  document.getElementById("mybutton").onclick = function(){
+     var text = document.getElementById("myInput").value;
+
+     document.getElementById("fourth").innerHTML = text;
+  }
+
+// Arrays
+  var arr = new Array();
+
+  arr.push("HEllo","Dog","Cat");
+  // arr.splice(1,1) remove one element from position 1
+
+  arr.splice(1,0,"Monkey"); //Adds monket to the index one of this array
+
+  console.log(arr);
+
+  // Math CLass
+  var x= Math.random();
+  
+  x*=5; //to generate desired range we multiply the random number with that number
+  x=Math.floor(x); //rounds off the value 
+  alert(x);
+  
+
+
+
+   
+
+</script>
+
+</body>
+</html>
