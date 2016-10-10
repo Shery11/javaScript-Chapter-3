@@ -20,7 +20,7 @@
 </style>
 
 
-<body>
+<body id="myClass">
 <h1>Check your reaction Time</h1>
 <p>Click on the boxes and circles as quick as you can</p>
 
@@ -48,7 +48,7 @@
         blue = Math.floor(Math.random() * 255);
        circleTimer = Math.floor(Math.random() * 2);
 
-
+      document.getElementById("myClass").style.backgroundColor = "rgb("+ Math.floor(Math.random() * 255)+","+ Math.floor(Math.random() * 255)+","+ Math.floor(Math.random() * 255)+")";
      //adds random color to the box
       document.getElementById("box").style.backgroundColor = "rgb("+red+","+green+","+blue+")";
      //randomly changes the position of the box
